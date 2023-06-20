@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+header .social {
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  overflow: hidden;
+}
+.social li {
+  width: 32px;
+  height: 32px;
+  background: url("images/social.png") no-repeat;
+  text-indent: -9999px;
+  float: left;
+}
+header ul.social li:nth-child(2) {
+  background-position: -32px 0;
+}
+header ul.social li:nth-child(3) {
+  background-position: -64px 0;
+}
+header ul.social li:nth-child(4) {
+  background-position: -96px 0;
+}
+header h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+header .loginMenu {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+
+/* Login */
+header .loginMenu {
+  overflow: hidden;
+}
+header .loginMenu li {
+  float: left;
+  padding-left: 30px;
+}
+header .loginMenu li a {
+  font-size: 12px;
+}
+
+/* mainMenu */
+header nav .mainMenu {
+  text-align: center;
+}
+header nav .mainMenu > li {
+  display: inline-block;
+}
+header nav .mainMenu > li > a {
+  display: block;
+  padding: 20px 30px;
+}
+
+/* article */
+#main_article {
+  height: 500px;
+  background-image: url("images/main.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top: 3px solid red;
+  /* fixed하면 말려들어가니 마진으로 밀어준다 */
+  margin-top: 120px;
+}
+#main_article > h3 {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+#main_article > p {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+/* list */
+#list > h3 {
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 3px dashed #ddd;
+  padding: 10px;
+}
+#list .box {
+  text-align: center;
+  padding: 100px;
+}
+#list .box > li {
+  display: inline-block;
+  padding: 30px;
+}
+
+#foot {
+  overflow: hidden;
+  border-top: 2px dashed #ddd;
+  padding: 10px;
+}
+#foot > .left {
+  float: left;
+}
+#foot > .right {
+  float: right;
+}
